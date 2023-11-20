@@ -1,0 +1,10 @@
+<h2>
+    Showing data from parent using @Input Decorator
+</h2>
+<div *ngFor="let item of mydata | keyvalue">{{item.key}} &nbsp;  : &nbsp;  {{item.value}}</div>
+
+
+<h2>Send data to parent using @Output Decorator</h2>
+<input type="text" #reference>
+
+&nbsp;<button (click)="sendToParent(reference.value)">Send</button>

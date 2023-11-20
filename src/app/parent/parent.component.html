@@ -1,0 +1,7 @@
+<h3>Dummy List for demonistration</h3>
+<ul>
+    <li *ngFor="let item of items">
+        {{item}}
+    </li>
+</ul>
+<app-child [mydata]="data" (parentVar)="addData($event)"></app-child>
